@@ -70,7 +70,6 @@ def prediction(img):
     image_class = classifier(img)
     return {'prediction': image_class}
     
-    # return {'path': img}
 
 
 # uvicorn main:app --reload
