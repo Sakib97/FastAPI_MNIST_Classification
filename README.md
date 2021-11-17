@@ -8,7 +8,7 @@ Head over to : https://mnist-digit-classification.herokuapp.com/docs#/prediction
 
 Click : try it out
 
-Give a image URL in the field: img_url
+Give a image URL in the field: img_url <br>
 Some sample URLs:  <br>
 https://drive.google.com/uc?id=1QUwfVsGyOl4golsECQaresx9uKmSggnP (It's 2) <br>
 https://drive.google.com/uc?id=1sB7D5XFdQdhMd3Wvfcp9eVzH-pC4V7D7 (It's 5) <br>
