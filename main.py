@@ -69,7 +69,7 @@ def prediction(img_url):
     image_class = classifier(img_url)
     return {'prediction': f'The digit is - {image_class}'}
     
-
+# Hello world
 
 # uvicorn main:app --reload
     
