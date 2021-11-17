@@ -57,18 +57,17 @@ def classifier(ima):
     _, prediction = torch.max(out, dim = 1)
     return prediction.item()
 
-@app.get('/', tags=['demo'])
+@app.get('/', tags=['welcome'])
 def index():
-    return {'message': 'Hello world'}
+    return {'message': 'Welcome to digit predictor'}
 
 @app.post('/digit_prediction', tags=['prediction'])
 # def prediction(img: image_path):
-def prediction(img):
+def prediction(img_url):
     
-    print(img)
        
-    image_class = classifier(img)
-    return {'prediction': image_class}
+    image_class = classifier(img_url)
+    return {'prediction': f'The digit is - {image_class}'}
     
 
 
